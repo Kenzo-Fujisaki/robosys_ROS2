@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'fortune = robosys_ROS2.fortune:main',
+            #'result = robosys_ROS2.result:main',
         ],
     },
 )
