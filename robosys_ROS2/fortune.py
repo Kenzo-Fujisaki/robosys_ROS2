@@ -11,7 +11,7 @@ class Fortune():
         self.pub = node.create_publisher(Int16, "number", 10)
         self.num = random.randint(1,100)
         print("")
-        print("     引いた番号は:" + str(self.num))
+        print("     引いた番号は: " + str(self.num))
         node.create_timer(2, self.cb)
 
     def cb(self):
