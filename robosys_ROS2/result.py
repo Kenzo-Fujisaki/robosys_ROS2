@@ -8,31 +8,31 @@ from std_msgs.msg import Int16
 def cb(msg):
     omikuji = msg.data
 
-    if omikuji == 1:
+    if 1 <= omikuji <= 10:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/daikichi.txt','r')
         data = f.read()
         print(data)
-    elif omikuji == 2:
+    elif 11 <= omikuji <= 35:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/kichi.txt','r')
         data = f.read()
         print(data)
-    elif omikuji == 3:
+    elif 36 <= omikuji <= 60:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/tyuukichi.txt','r')
         data = f.read()
         print(data)
-    elif omikuji == 4:
+    elif 61 <= omikuji <= 75:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/syouichi.txt','r')
         data = f.read()
         print(data)
-    elif omikuji == 5:
+    elif 76 <= omikuji <= 85:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/suekichi.txt','r')
         data = f.read()
         print(data)
-    elif omikuji == 6:
+    elif 86 <= omikuji <= 95:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/kyou.txt','r')
         data = f.read()
         print(data)
-    elif omikuji == 7:
+    elif 96 <= omikuji <= 100:
         f = open('/home/kenzo-fujisaki/ros2_ws/src/robosys_ROS2/robosys_ROS2/daikyou.txt','r')
         data = f.read()
         print(data)
