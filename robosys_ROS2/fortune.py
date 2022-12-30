@@ -10,7 +10,8 @@ class Fortune():
     def __init__(self, node):
         self.pub = node.create_publisher(Int16, "number", 10)
         self.num = random.randint(1,100)
-        node.create_timer(0.5, self.cb)
+        print("引いた番号は:" + str(self.num))
+        node.create_timer(2, self.cb)
 
     def cb(self):
         msg = Int16()
