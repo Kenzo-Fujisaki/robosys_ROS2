@@ -5,13 +5,6 @@
 
 ---
 
-## トピックの説明
-* `/number`
-    * `fortune.py`にてランダム生成される数字を格納し、`result.py`に格納された数字を渡す。
-    * メッセージの型は16ビットの符号付き整数
-
----
-
 ## 実行方法
   ```
   $ ros2 launch robosys_ROS2 omikuji.launch.py
@@ -23,6 +16,14 @@
 ![ロボシス課題2](https://user-images.githubusercontent.com/85381022/210080607-9b6f2ae1-989f-4029-9da9-cf444abd38a4.png)
 
 ---
+
+## トピックの説明
+* `/number`
+    * `fortune.py`にてランダム生成される数字を格納し、`result.py`に格納された数字を渡す。
+    * メッセージの型は16ビットの符号付き整数
+
+---
+
 
 ## 動作確認済み環境
 * OS: Ubuntu 20.04 LTS
