@@ -9,7 +9,7 @@ import random
 rclpy.init()
 node = Node("fortune")
 pub = node.create_publisher(Int16, "number", 10)
-num = 11
+num = random.randint(1,100)
 
 def cb():
     global num
