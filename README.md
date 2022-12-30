@@ -26,7 +26,7 @@
 
 
 ## 動作確認済み環境
-* OS: Ubuntu 20.04 LTS
+* OS: Ubuntu 20.04 LTS, Ubuntu 22.04 LTS
 * ROS: foxy
 
 ---
