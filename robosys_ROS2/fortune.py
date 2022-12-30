@@ -6,16 +6,22 @@ from rclpy.node import Node
 from std_msgs.msg import Int16
 import random
 
-rclpy.init()
-node = Node("fortune")
-pub = node.create_publisher(Int16, "number", 10)
-num = random.randint(1,100)
+class Fortune():
+    def __init__(self, node):
+        self.pub = node.create_publisher(Int16, "number", 10)
+        self.num = random.randint(1,100)
+        node.create_timer(0.5, self.cb)
 
-def cb():
-    global num
-    msg = Int16()
-    msg.data = num
-    pub.publish(msg)
+    def cb(self):
+        msg = Int16()
+        msg.data = self.num
+        self.pub.publish(msg)
 
-node.create_timer(0.5, cb)
-rclpy.spin(node)
+def main():
+    rclpy.init()
+    node = Node("fortune")
+    fortune = Fortune(node)
+    rclpy.spin_once(node)
+
+if __name__ == '__main__':
+    main()
