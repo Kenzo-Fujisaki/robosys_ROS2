@@ -18,7 +18,7 @@
 ---
 
 ## 実行結果
-![ロボシス課題2](https://user-images.githubusercontent.com/85381022/210060383-87f9aaab-2dbe-403a-8e95-4843fb212689.png)
+![ロボシス課題2](https://user-images.githubusercontent.com/85381022/210080607-9b6f2ae1-989f-4029-9da9-cf444abd38a4.png)
 
 ---
 
