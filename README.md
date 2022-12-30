@@ -6,7 +6,7 @@
 
 ## トピック
 * `number`
-    * `fortune.py`にてランダム生成される数字を送信し、`result.py`でメッセージを受け取り、対応する番号のおみくじ表示する。
+    * `fortune.py`にてランダム生成される数字を格納し、`result.py`に格納された数字を渡す。
     * メッセージの型は16ビットの符号付き整数
 
 ---
@@ -19,7 +19,7 @@
 ---
 
 ## 実行結果
-![ロボシス課題②](https://user-images.githubusercontent.com/85381022/210058948-b5501b6e-0621-478a-964f-933bdd7988fd.png)
+![ロボシス課題2](https://user-images.githubusercontent.com/85381022/210060383-87f9aaab-2dbe-403a-8e95-4843fb212689.png)
 
 ---
 
