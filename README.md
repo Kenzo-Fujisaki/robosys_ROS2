@@ -1,4 +1,6 @@
 # robosys_ROS2
+![test](https://github.com/Kenzo-Fujisaki/robosys_ROS2/actions/workflows/test.yml/badge.svg)
+
 本リポジトリは2022年度ロボットシステム学課題2で作成したおみくじができるROS2パッケージです。
 
 ---
