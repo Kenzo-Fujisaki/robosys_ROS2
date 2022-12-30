@@ -10,4 +10,4 @@ colcon build
 source $dir/.bashrc
 ros2 launch robosys_ROS2 omikuji.launch.py > /tmp/robosys_ROS2.log
 
-cat /tmp/robosys_ROS2.log | grep 吉
+cat /tmp/robosys_ROS2.log | grep -e "引いた" -e "吉" -e "凶"
